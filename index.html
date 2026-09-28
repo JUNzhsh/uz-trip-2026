@@ -1,0 +1,815 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>塔什干与撒马尔罕六日</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+
+<style>
+:root{
+  --ground:#EFECE4;
+  --surface:#FBF9F5;
+  --surface-2:#F5F1E8;
+  --ink:#17223A;
+  --ink-soft:#4A5468;
+  --ink-mute:#7C8496;
+  --rule:#DDD7CA;
+  --lapis:#2C4FA0;
+  --turq:#0E7F90;
+  --saffron:#9C6C0E;
+  --saffron-bg:#F6EEDC;
+  --lapis-bg:#E7EAF5;
+  --shadow:0 1px 2px rgba(23,34,58,.05), 0 8px 24px -16px rgba(23,34,58,.28);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#121A2C;
+    --surface:#1A2338;
+    --surface-2:#202B42;
+    --ink:#E6E3DA;
+    --ink-soft:#B3B8C6;
+    --ink-mute:#838B9D;
+    --rule:#2E3A52;
+    --lapis:#8DAAEC;
+    --turq:#4FC3D0;
+    --saffron:#DFA945;
+    --saffron-bg:#2A2418;
+    --lapis-bg:#1D2740;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 10px 28px -18px rgba(0,0,0,.9);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#121A2C;
+  --surface:#1A2338;
+  --surface-2:#202B42;
+  --ink:#E6E3DA;
+  --ink-soft:#B3B8C6;
+  --ink-mute:#838B9D;
+  --rule:#2E3A52;
+  --lapis:#8DAAEC;
+  --turq:#4FC3D0;
+  --saffron:#DFA945;
+  --saffron-bg:#2A2418;
+  --lapis-bg:#1D2740;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 10px 28px -18px rgba(0,0,0,.9);
+}
+
+html{scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:"IBM Plex Sans","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;
+  font-size:16px;
+  line-height:1.72;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:44rem;margin:0 auto;padding:0 20px 96px}
+
+/* ---------- masthead ---------- */
+.mast{padding:56px 0 32px;border-bottom:1px solid var(--rule)}
+.eyebrow{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--turq);margin:0 0 14px;
+}
+h1{
+  font-family:Newsreader,"Songti SC",Georgia,serif;
+  font-weight:600;font-size:clamp(34px,8vw,48px);line-height:1.14;
+  margin:0 0 14px;text-wrap:balance;letter-spacing:-.01em;
+}
+.dek{margin:0;color:var(--ink-soft);font-size:15.5px;max-width:34rem}
+
+/* ---------- jump nav ---------- */
+.jumpnav{
+  position:sticky;top:0;z-index:30;display:flex;flex-wrap:wrap;gap:8px;
+  margin:20px 0 0;padding:12px 0;background:var(--ground);
+  border-bottom:1px solid var(--rule);
+}
+.jumpnav a{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--lapis);text-decoration:none;
+  border:1px solid var(--rule);border-radius:2px;padding:6px 11px;background:var(--surface);
+  transition:background-color .12s ease;
+}
+.jumpnav a:hover,.jumpnav a:focus-visible{background:var(--lapis-bg)}
+.jumpnav a:focus-visible{outline:2px solid var(--lapis);outline-offset:1px}
+.jumpnav + h2{margin-top:24px}
+
+/* ---------- fact table ---------- */
+.facts{margin:28px 0 0;border-top:1px solid var(--rule)}
+.fact{
+  display:grid;grid-template-columns:64px 1fr;gap:0 16px;
+  padding:13px 0;border-bottom:1px solid var(--rule);align-items:baseline;
+}
+.fact-k{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:11.5px;letter-spacing:.1em;color:var(--ink-mute);
+  text-transform:uppercase;
+}
+.fact-v{font-size:14.5px;line-height:1.6}
+.fact-v b{font-weight:600}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums;font-size:.94em}
+
+/* ---------- sections ---------- */
+h2{
+  font-family:Newsreader,"Songti SC",Georgia,serif;
+  font-weight:600;font-size:27px;line-height:1.25;
+  margin:56px 0 6px;letter-spacing:-.005em;scroll-margin-top:60px;
+}
+.sec-note{margin:0 0 22px;color:var(--ink-mute);font-size:14px}
+
+/* ---------- day ---------- */
+.day{
+  background:var(--surface);border:1px solid var(--rule);border-radius:3px;
+  box-shadow:var(--shadow);margin:0 0 18px;overflow:hidden;scroll-margin-top:60px;
+}
+.day-head{
+  display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+  padding:16px 20px;background:var(--surface-2);border-bottom:1px solid var(--rule);
+}
+.day-n{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-weight:600;
+  font-size:11px;letter-spacing:.14em;color:var(--lapis);
+  background:var(--lapis-bg);padding:3px 8px;border-radius:2px;
+}
+.day-date{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:14px;font-weight:500;font-variant-numeric:tabular-nums}
+.day-where{font-size:14px;color:var(--ink-soft);margin-left:auto}
+
+.rail{list-style:none;margin:0;padding:6px 20px 20px}
+.rail>li{
+  display:grid;grid-template-columns:58px 1fr;gap:0 16px;
+  padding:14px 0 0;position:relative;
+}
+.rail>li::before{
+  content:"";position:absolute;left:70px;top:0;bottom:0;width:1px;background:var(--rule);
+}
+.rail>li:first-child::before{top:22px}
+.rail>li:last-child::before{bottom:auto;height:22px}
+.t{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums;
+  font-size:12.5px;font-weight:500;color:var(--turq);padding-top:3px;letter-spacing:-.02em;
+}
+.slot{padding-left:16px;position:relative}
+.slot::before{
+  content:"";position:absolute;left:-4.5px;top:11px;width:7px;height:7px;border-radius:50%;
+  background:var(--turq);box-shadow:0 0 0 3px var(--surface);
+}
+.slot h3{
+  font-size:16px;font-weight:600;margin:0 0 3px;line-height:1.45;
+}
+.slot h3 .lat{font-family:Newsreader,Georgia,serif;font-weight:400;font-style:italic;color:var(--ink-mute);font-size:14px;margin-left:6px}
+.slot p{margin:0;color:var(--ink-soft);font-size:14.5px}
+.slot p + p{margin-top:6px}
+.tag{
+  display:inline-block;font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--lapis);border:1px solid var(--rule);border-radius:2px;
+  padding:1px 6px;margin-left:8px;vertical-align:1.5px;
+}
+
+.node{color:var(--lapis);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;text-decoration-thickness:1px}
+.node:hover,.node:focus-visible{text-decoration-style:solid}
+.node:focus-visible{outline:2px solid var(--lapis);outline-offset:2px;border-radius:1px}
+.pins{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:4px 0 8px}
+.pin-l{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute)}
+.pin{font-size:12.5px;line-height:1.3;color:var(--lapis);text-decoration:none;border:1px solid var(--rule);border-radius:2px;padding:3px 8px;background:var(--surface)}
+.pin:hover{background:var(--lapis-bg)}
+.pin:focus-visible{outline:2px solid var(--lapis);outline-offset:2px}
+.tag.dress{color:var(--saffron);border-color:var(--saffron)}
+.slot h3 .h-extra{
+  display:inline-block;margin-left:6px;font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:11px;font-weight:500;letter-spacing:.01em;color:var(--ink-mute);vertical-align:1px;
+}
+.slot h3 .h-extra .node{font-size:11px}
+.tag.dress-soft{color:var(--ink-mute)}
+
+.slot .photo{margin:10px 0 2px;border-radius:3px;overflow:hidden;border:1px solid var(--rule);background:var(--surface-2)}
+.slot .photo img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;background:var(--rule)}
+.slot .photo figcaption{
+  padding:5px 9px;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10px;
+  letter-spacing:.04em;color:var(--ink-mute);background:var(--surface);border-top:1px solid var(--rule);
+}
+.slot .photo figcaption a{color:inherit;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:2px}
+.slot .photo figcaption a:hover,.slot .photo figcaption a:focus-visible{text-decoration-style:solid}
+
+/* ---------- alert ---------- */
+.alert{
+  background:var(--saffron-bg);border-left:3px solid var(--saffron);
+  padding:12px 16px;margin:14px 0 0;font-size:14px;line-height:1.65;
+}
+.alert b{color:var(--saffron);font-weight:600}
+.alert.top{margin:0 0 20px}
+
+/* ---------- hotel ---------- */
+.hotel{
+  background:var(--surface);border:1px solid var(--rule);border-radius:3px;
+  padding:18px 20px;margin:0 0 14px;box-shadow:var(--shadow);
+}
+.hotel-h{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:0 0 4px}
+.hotel-h h3{font-size:16.5px;font-weight:600;margin:0}
+.pick{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10px;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--surface);
+  background:var(--turq);padding:2px 7px;border-radius:2px;
+}
+.hotel p{margin:0;font-size:14.5px;color:var(--ink-soft)}
+.hotel p+p{margin-top:8px}
+.hotel .zone{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;
+  color:var(--ink-mute);letter-spacing:.04em;
+}
+.alts{margin:8px 0 0;padding-left:18px;font-size:14px;color:var(--ink-soft)}
+.alts li{margin:4px 0}
+
+/* ---------- checklist ---------- */
+.checks{list-style:none;margin:0;padding:0}
+.checks li{
+  border-bottom:1px solid var(--rule);padding:12px 0 12px 26px;position:relative;
+  font-size:14.5px;color:var(--ink-soft);
+}
+.checks li::before{
+  content:"";position:absolute;left:2px;top:20px;width:10px;height:10px;
+  border:1px solid var(--lapis);border-radius:1px;
+}
+.checks li b{color:var(--ink);font-weight:600}
+
+/* ---------- social caption ---------- */
+.caption{
+  margin:0 20px 20px;padding:16px 18px 14px;
+  background:var(--surface-2);border:1px dashed var(--rule);border-radius:3px;
+}
+.caption-label{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10.5px;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--turq);
+  margin:0 0 8px;display:block;
+}
+.caption p{
+  font-family:Newsreader,"Songti SC",Georgia,serif;font-style:italic;
+  font-size:15.5px;line-height:1.75;color:var(--ink);margin:0;
+}
+.caption .tags{
+  margin-top:10px;font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:12px;color:var(--ink-mute);letter-spacing:.01em;
+}
+
+/* ---------- map list ---------- */
+.maps{margin:0 0 18px;background:var(--surface);border:1px solid var(--rule);border-radius:3px;box-shadow:var(--shadow);overflow:hidden}
+.maps-h{
+  display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+  padding:14px 20px;background:var(--surface-2);border-bottom:1px solid var(--rule);
+}
+.maps-h h3{font-size:15.5px;font-weight:600;margin:0}
+.maps-h .day-n{margin-left:auto}
+.maps ol{list-style:none;margin:0;padding:6px 20px 14px;counter-reset:mp}
+.maps li{
+  border-bottom:1px solid var(--rule);padding:10px 0 10px 30px;position:relative;
+  display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+}
+.maps li:last-child{border-bottom:0}
+.maps li::before{
+  counter-increment:mp;content:counter(mp,decimal-leading-zero);
+  position:absolute;left:0;top:12px;
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10.5px;
+  color:var(--ink-mute);font-variant-numeric:tabular-nums;
+}
+.maps a{
+  color:var(--lapis);text-decoration:none;font-weight:600;font-size:14.5px;
+  border-bottom:1px solid transparent;
+}
+.maps a:hover,.maps a:focus-visible{border-bottom-color:var(--lapis)}
+.maps a:focus-visible{outline:2px solid var(--lapis);outline-offset:3px;border-radius:1px}
+.maps .cn{color:var(--ink-soft);font-size:13.5px}
+.maps .warn{color:var(--saffron);font-size:12.5px;font-weight:500;width:100%;margin-top:2px}
+
+.slot details.more{margin:10px 0 0;border:1px solid var(--rule);border-radius:2px;background:var(--surface-2)}
+.slot details.more>summary{
+  cursor:pointer;list-style:none;padding:8px 12px;
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;
+  letter-spacing:.04em;color:var(--ink-mute);
+  display:flex;align-items:center;gap:6px;
+}
+.slot details.more>summary::-webkit-details-marker{display:none}
+.slot details.more>summary::before{content:"\25B8";display:inline-block;transition:transform .15s ease;font-size:10px}
+.slot details.more[open]>summary::before{transform:rotate(90deg)}
+.slot details.more>summary:focus-visible{outline:2px solid var(--lapis);outline-offset:-2px}
+.slot details.more .more-body{padding:2px 12px 12px}
+.slot details.more .more-body>p{margin-top:8px;color:var(--ink-soft);font-size:14.5px}
+.slot details.more .more-body>p:first-child{margin-top:10px}
+.slot details.more .more-body .alert{margin-top:8px}
+@media (prefers-reduced-motion:reduce){.slot details.more>summary::before{transition:none}}
+
+/* ---------- collapsible ---------- */
+details.geo{margin:0 0 18px;border:1px solid var(--rule);border-radius:3px;background:var(--surface);box-shadow:var(--shadow);overflow:hidden}
+details.geo>summary{
+  padding:14px 20px;cursor:pointer;list-style:none;
+  font-family:Newsreader,"Songti SC",Georgia,serif;font-weight:600;font-size:19px;
+  background:var(--surface-2);border-bottom:1px solid transparent;
+  display:flex;align-items:center;gap:10px;
+}
+details.geo>summary::-webkit-details-marker{display:none}
+details.geo>summary::after{content:"\25B8";margin-left:auto;color:var(--ink-mute);font-size:14px;transition:transform .18s ease}
+details.geo[open]>summary{border-bottom-color:var(--rule)}
+details.geo[open]>summary::after{transform:rotate(90deg)}
+details.geo>summary:focus-visible{outline:2px solid var(--lapis);outline-offset:-2px}
+@media (prefers-reduced-motion:reduce){details.geo>summary::after{transition:none}}
+.geo-body{padding:4px 20px 6px}
+.geo-body .hotel{border:0;box-shadow:none;background:transparent;border-radius:0;padding:14px 0;margin:0;border-bottom:1px solid var(--rule)}
+.geo-body .hotel:last-child{border-bottom:0}
+.geo-body .sec-note{margin:12px 0 0}
+
+.foot{
+  margin:56px 0 0;padding-top:20px;border-top:1px solid var(--rule);
+  font-size:13px;color:var(--ink-mute);line-height:1.7;
+}
+@media (max-width:480px){
+  .rail>li{grid-template-columns:48px 1fr;gap:0 10px}
+  .rail>li::before{left:54px}
+  .day-where{margin-left:0;width:100%}
+}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <p class="eyebrow">10.01 — 10.07 · 两人同行</p>
+  <h1>塔什干与撒马尔罕六日</h1>
+  <p class="dek">按已订好的机票与火车倒排的行程。挑了干净、好拍、能逛能吃的点，节奏留了余量——你们走累了随时能砍掉半站。</p>
+
+  <div class="facts">
+    <div class="fact"><div class="fact-k">10.01</div><div class="fact-v"><b>MU6037</b> 浦东 T1 <span class="mono">13:45</span> → <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Islam+Karimov+Tashkent+International+Airport">塔什干 T2</a> <span class="mono">18:40</span>　<span style="color:var(--ink-mute)">飞 7h55m</span></div></div>
+    <div class="fact"><div class="fact-k">10.03</div><div class="fact-v"><b>054ФА</b> <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Toshkent+Janubiy+railway+station">塔什干<b style="color:var(--saffron)">南站</b></a> <span class="mono">16:00</span> → <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Samarkand+railway+station">撒马尔罕</a> <span class="mono">20:14</span>　<span style="color:var(--ink-mute)">12 车 009 / 011</span></div></div>
+    <div class="fact"><div class="fact-k">10.05</div><div class="fact-v"><b>703ФА</b> <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Samarkand+railway+station">撒马尔罕</a> <span class="mono">08:10</span> → <a class="node" href="https://maps.app.goo.gl/xZ8qscwf2K9iA8THA">塔什干<b>主站</b></a> <span class="mono">12:19</span>　<span style="color:var(--ink-mute)">18 车 001 / 002</span></div></div>
+    <div class="fact"><div class="fact-k">10.06</div><div class="fact-v"><b>MU6038</b> <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Islam+Karimov+Tashkent+International+Airport">塔什干 T2</a> <span class="mono">20:20</span> → 浦东 T1 <span class="mono">05:50<sup>+1</sup></span></div></div>
+    <div class="fact"><div class="fact-k">住宿</div><div class="fact-v"><b>Reikartz Sote</b> 塔什干 <span class="mono">10.01–03</span> → <b>Continental</b> 撒马尔罕 <span class="mono">10.03–05</span> → <b>Holiday Inn Tashkent City</b> <span class="mono">10.05–06</span></div></div>
+  </div>
+</header>
+
+<nav class="jumpnav">
+  <a href="#day1">Day 1</a>
+  <a href="#day2">Day 2</a>
+  <a href="#day3">Day 3</a>
+  <a href="#day4">Day 4</a>
+  <a href="#day5">Day 5</a>
+  <a href="#hotels">酒店</a>
+  <a href="#maps">地图</a>
+  <a href="#checklist">备忘录</a>
+</nav>
+
+<h2 id="itinerary">行程</h2>
+<p class="sec-note">时间是建议锚点，不是打卡表。同一片区内基本都在 15 分钟车程内，Yandex Go 叫车。</p>
+
+<article class="day" id="day0">
+  <div class="day-head">
+    <span class="day-n">DAY 0</span><span class="day-date">10.01 周四</span>
+    <span class="day-where">落地 · 塔什干</span>
+  </div>
+  <ul class="rail">
+    <li><span class="t">18:40</span><div class="slot">
+      <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Islam+Karimov+Tashkent+International+Airport">塔什干机场 T2</a> 落地</h3>
+      <p>乌兹时间比北京<b>晚 3 小时</b>，落地时国内已是 21:40。过关加取行李算 <span class="mono">40–60</span> 分钟。</p>
+      <p>在机场换 <b>50–100 美元</b> 现金应急就够，市区兑换点汇率更好。打车认准 Yandex Go，别搭航站楼门口拉客的。</p>
+    </div></li>
+    <li><span class="t">20:00</span><div class="slot">
+      <h3>入住 <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Reikartz+Sote+Tashkent">Reikartz</a>，今晚不安排</h3>
+      <p>Reikartz Sote Tashkent（Furqat ko'chasi 4）。酒店附近随便吃一口，第一晚倒时差，早睡。</p>
+    </div></li>
+  </ul>
+<div class="caption">
+<span class="caption-label">发圈文案 · Day 0</span>
+<p>18:40 落地塔什干，当地时间比北京晚三小时，出关取行李花了将近一小时。第一晚没排行程，酒店附近吃了顿饭就休息，倒时差。</p>
+<div class="tags">#塔什干 #乌兹别克斯坦 #中亚旅行 #十月出行</div>
+</div>
+</article>
+
+<article class="day" id="day1">
+  <div class="day-head">
+    <span class="day-n">DAY 1</span><span class="day-date">10.02 周五</span>
+    <span class="day-where">塔什干全天</span>
+  </div>
+  <ul class="rail">
+    <li><span class="t">09:00</span><div class="slot">
+      <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Hazrati+Imam+Complex+Tashkent">哈兹拉提伊玛目建筑群</a> <span class="lat">Hazrati Imom</span><span class="tag">拍照</span><span class="tag dress">遮头</span></h3>
+      <figure class="photo"><img src="images/hazrati-imam.jpg" alt="哈兹拉提伊玛目建筑群，白墙蓝顶" loading="lazy" width="1100" height="825"><figcaption>照片 · <a href="https://commons.wikimedia.org/wiki/File:Barakhan_Madrasah_Tashkent.jpg">Wikimedia Commons</a></figcaption></figure>
+      <p>白墙、蓝顶、大片开阔广场，几乎没有游客拥挤感，地面干净——第一站放这里，你们对这趟旅行的第一印象就稳了。上午侧光，正面拍建筑最好看。</p>
+      <p>女士带一条<b>素色薄披肩</b>，进清真寺内殿要遮头，也是最好用的拍照道具。</p>
+    </div></li>
+    <li><span class="t">10:30</span><div class="slot">
+      <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Chorsu+Bazaar+Tashkent">楚苏巴扎</a> <span class="lat">Chorsu Bazaar</span><span class="tag">购物</span><span class="h-extra">· <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Gold+Center+Chorsu+Tashkent">Gold Center</a></span></h3>
+      <figure class="photo"><img src="images/chorsu.jpg" alt="楚苏巴扎蓝色大圆顶内部" loading="lazy" width="1100" height="825"><figcaption>照片 · <a href="https://commons.wikimedia.org/wiki/File:Chorsu_Market_general_view.jpg">Wikimedia Commons</a></figcaption></figure>
+      <p>老城大巴扎，标志性的蓝色大圆顶。<b>只逛圆顶主楼里的干果、香料、坚果层</b>——这层干净、灯好、颜色漂亮，出片也在这里。楼下的生鲜肉区味道重，直接跳过。</p>
+      <p>杏干、无花果干、开心果、藏红花可以在这里比价，最后一天再回来买（当天买当天背两天）。</p>
+      <div class="alert"><b>买伴手礼别在圆顶里买——去外围的 Gold Center。</b>就在大巴扎外围，售卖区域非常大、非常多，本地人都在这儿买东西，价格亲民得多，而且<b>可以砍价</b>。<br>一件手工外套在这里 <span class="mono">10–20 万</span>苏姆，同样的东西在撒马尔罕或塔什干别处要 <span class="mono">30–50 万</span>。想买便宜好看的伴手礼，就来这儿。</div>
+    </div></li>
+    <li><span class="t">11:45</span><div class="slot">
+      <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Kukeldash+Madrasah+Tashkent">库克尔达什经学院</a> <span class="lat">Ko'kaldosh Madrasasi</span><span class="tag">备选</span><span class="tag dress">遮头</span><span class="h-extra">· <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Juma+Mosque+Tashkent">主麻清真寺</a></span></h3>
+      <figure class="photo"><img src="images/kukeldash.jpg" alt="库克尔达什经学院内院" loading="lazy" width="1100" height="825"><figcaption>照片 · <a href="https://commons.wikimedia.org/wiki/File:Kukeldash_Madrasah_inner_yard.jpg">Wikimedia Commons</a></figcaption></figure>
+      <p><b>今天的机动项——时间不够就直接跳过。</b>如果在 Gold Center 逛得开心，宁可把时间留在那儿，别为了赶这一站扫兴。</p>
+      <p>就在巴扎上方的坡顶，从楚苏走上去几分钟，零绕路。16 世纪建的，塔什干现存规模最大的经学院，至今仍是在用的宗教学校。土黄砖墙配蓝色瓷砖门楼，内院方正安静，和楼下巴扎的喧闹是两个世界。紧挨着塔什干主麻清真寺（Juma Mosque），两处加起来半小时。</p>
+      <p>院内是活动的宗教场所，进门<b>披肩遮头、别穿短裤短裙</b>，拍人像克制一点。</p>
+    </div></li>
+    <li><span class="t">12:15</span><div class="slot">
+      <h3>午饭 · 就在巴扎附近解决</h3>
+      <p>别为了吃饭跑回市中心——下午的路线正好从这里往东走。楚苏周边有大量本地茶馆（chaikhana），挑门脸新、人多的进；嫌环境的话，坐两站地铁到 <b>Alisher Navoi</b> 站出来再吃，那一带餐厅体面得多。</p>
+    </div></li>
+    <li><span class="t">13:30</span><div class="slot">
+      <h3>地铁站巡礼<span class="tag">拍照</span><span class="h-extra">· <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Alisher+Navoi+metro+station+Tashkent">Alisher Navoi</a> · <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Kosmonavtlar+metro+station+Tashkent">Kosmonavtlar</a> · <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Mustaqillik+Maydoni+metro+station+Tashkent">Mustaqillik Maydoni</a></span></h3>
+      <figure class="photo"><img src="images/metro.jpg" alt="Alisher Navoi 地铁站穹顶与连拱" loading="lazy" width="1100" height="825"><figcaption>照片 · Alisher Navoi 站 · <a href="https://images.squarespace-cdn.com/content/v1/5940f2725016e1c79e469470/1540110274099-N31YPAB2CLPSEEWF60TA/alisher+navoi+metro+tashkent">来源链接</a></figcaption></figure>
+      <p>塔什干地铁是这趟最被低估的拍照点：苏联时代造的宫殿式车站，每站不同主题，凉快、干净、几乎没人挡镜头，单程约 <span class="mono">1700</span> 苏姆。2018 年起已<b>允许拍照</b>。</p>
+      <p><b>顺路的关键：楚苏、Alisher Navoi、Kosmonavtlar 在同一条线上（2 号线），不用换乘，一路往东。</b>依次是 <b>Alisher Navoi</b>（青蓝穹顶长廊，最像宫殿）→ <b>Kosmonavtlar</b>（宇航员站，深蓝底＋航天员浮雕，最出片）。</p>
+      <p>然后折回 Alisher Navoi 换 1 号线，中途在 <b>Mustaqillik Maydoni</b>（白色大理石柱）下车看一眼再上车，<b>坐到终点 Amir Temur Xiyoboni 站出来</b>——博物馆就在站口。</p>
+    </div></li>
+    <li><span class="t">15:15</span><div class="slot">
+      <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=State+Museum+of+the+Temurids+Tashkent">帖木儿历史博物馆</a> <span class="lat">State Museum of the Temurids</span><span class="tag">拍照</span><span class="tag">17:00 闭馆</span></h3>
+      <figure class="photo"><img src="images/temurids-museum.jpg" alt="帖木儿历史博物馆，青绿色棱纹穹顶" loading="lazy" width="1100" height="825"><figcaption>照片 · <a href="https://commons.wikimedia.org/wiki/File:Amir_Timur_Museum,_Taskhent_(%D0%A2%D0%B5%D0%BC%D1%83%D1%80%D0%B8%D0%B9%D0%BB%D0%B0%D1%80_%D1%82%D0%B0%D1%80%D0%B8%D1%85%D0%B8_%D0%B4%D0%B0%D0%B2%D0%BB%D0%B0%D1%82_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9%D0%B8,_%D0%A2%D0%BE%D1%88%D0%BA%D0%B5%D0%BD%D1%82,_%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8_%D0%A2%D0%B8%D0%BC%D1%83%D1%80%D0%B8%D0%B4%D0%BE%D0%B2).jpg">Wikimedia Commons</a></figcaption></figure>
+      <p>帖木儿广场旁那栋青绿色棱纹穹顶的圆楼，1996 年建的。<b>外观本身就很出片</b>，内部是巨型吊灯、整墙壁画和帖木儿时代的手稿、兵器、细密画复制品，一小时看完。有门票，相机可能另收费。</p>
+      <div class="alert"><b>17:00 闭馆，这是今天唯一的硬时间点。</b>最晚 <span class="mono">15:30</span> 进场，别卡到 16:30 才到——闭馆前半小时通常就停止入场了。上午在 Gold Center 逛过了头的话，跳掉库克尔达什也要保住这一站。</div>
+      <p><b>顺序特意调过：先进馆，再走户外。</b>博物馆 17:00 就关，而独立广场和百老汇是露天的，黄昏光线反而更好——反过来排就赶不上了。</p>
+      <p class="zone" style="color:var(--saffron)">出发前再查一下闭馆日。这边博物馆<b>周一常闭馆</b>，所以别指望挪到 10.05（周一）去补，10.02 周五这天是唯一的机会。</p>
+    </div></li>
+    <li><span class="t">17:00</span><div class="slot">
+      <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Amir+Timur+Square+Tashkent">帖木儿广场</a> → <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Sailgokh+Street+Broadway+Tashkent">百老汇</a> → <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Independence+Square+Mustaqillik+Maydoni+Tashkent">独立广场</a> <span class="lat">Broadway</span></h3>
+      <p>出博物馆就是<b>帖木儿广场和塔什干钟楼</b>。然后沿百老汇往西走——这条画摊和街头画师的步行街，本身就是 Amir Temur 站到 Mustaqillik Maydoni 站之间的那段路，<b>走完正好收在独立广场，完全不用回头</b>。</p>
+      <p>独立广场的大片草坪、白色纪念门和喷泉，黄昏这个点光线最好。走累了百老汇上随处能喝杯咖啡。</p>
+    </div></li>
+    <li><span class="t">19:00</span><div class="slot">
+      <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Magic+City+Tashkent">魔法城</a> <span class="lat">Magic City</span><span class="tag">夜景</span><span class="h-extra">· <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Tashkent+City+Park">Tashkent City Park</a></span></h3>
+      <figure class="photo"><img src="images/magic-city.jpg" alt="魔法城夜间灯光与倒影" loading="lazy" width="1100" height="825"><figcaption>照片 · <a href="https://commons.wikimedia.org/wiki/File:Magic_City_with_lights.jpg">Wikimedia Commons</a></figcaption></figure>
+      <p>近几年新建的童话城堡主题商业区，晚上整片打灯、有湖有喷泉，全新、极干净、地面平整好走。是塔什干夜里最出片的地方，长辈也拍得开心。里面有餐厅和甜品店，晚饭就地解决。</p>
+      <p><b>魔法城就在你们住的 Reikartz 旁边</b>——Google 上量下来约 <span class="mono">1.4</span> 公里、3 分钟车程。所以放在一天的最后：从独立广场打车过来，玩完直接回酒店睡觉，不用再折返。</p>
+      <p>回程想看喷泉，Tashkent City Park 离酒店约 2 公里（6 分钟车程）。</p>
+    </div></li>
+  </ul>
+<div class="caption">
+<span class="caption-label">发圈文案 · Day 1</span>
+<p>今天在塔什干老城和市中心走了一整天：上午哈兹拉提伊玛目建筑群、楚苏巴扎，中午顺路看了库克尔达什经学院；下午坐了几站地铁，苏联时期建的车站，每一站装修风格都不一样，之后去了帖木儿历史博物馆和帖木儿广场；晚上是魔法城，一片新建的商业区，夜里会打灯。</p>
+<div class="tags">#塔什干 #哈兹拉提伊玛目 #楚苏巴扎 #塔什干地铁 #魔法城</div>
+</div>
+</article>
+
+<article class="day" id="day2">
+  <div class="day-head">
+    <span class="day-n">DAY 2</span><span class="day-date">10.03 周六</span>
+    <span class="day-where">塔什干 → 撒马尔罕</span>
+  </div>
+  <ul class="rail">
+    <li><span class="t">09:30</span><div class="slot">
+      <h3>退房，行李寄存 <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Reikartz+Sote+Tashkent">Reikartz</a> 前台</h3>
+      <p>先办好退房，行李放 Reikartz 前台，轻装出门。<b>09:45 打车出发</b>（约 9 分钟），预约的是 10:00 场，宁可早到几分钟。下午 13:30 回来取行李。</p>
+    </div></li>
+    <li><span class="t">10:00</span><div class="slot">
+      <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=874H%2BHW+Tashkent">CCA Tashkent 当代艺术中心</a> <span class="lat">Centre for Contemporary Arts</span><span class="tag">拍照</span><span class="tag">免费 · 需预约</span><span class="h-extra">· <a class="node" href="https://yandex.uz/maps/-/CPSN5OYD">官网 Yandex 定位</a></span></h3>
+      <figure class="photo"><img src="images/cca.jpg" alt="CCA Tashkent 主展厅，旧柴油站工业屋架与装置作品" loading="lazy" width="1100" height="825"><figcaption>照片 · CCA 主展厅 · <a href="https://ccat.uz/storage/uploads/content-blocks/2026/09/01M33WZ7KFVA30WZV3D7QENVD4.jpg">ccat.uz</a></figcaption></figure>
+      <p>乌兹别克斯坦第一座当代艺术中心，2026 年 9 月 6 日刚开馆。房子是 1912 年的旧柴油站和电车库，由 Studio KO 改造——<b>建筑本身就值得拍</b>，老工业厂房配极简的新界面。</p>
+      <p>现在展的是开馆首展 <b>Hikmah</b>（9 月 6 日至 2027 年 1 月 31 日，首席策展人 Sara Raza，聊智慧、精神与材料转化的群展）。官网首页还挂着 Akhunov 的个展 <i>Instruments of the Mind</i>，但那个是威尼斯双年展的平行项目，<b>在威尼斯，塔什干看不到</b>。</p>
+      <p>馆里还有商店（限量书籍和周边，收入用于支持展览）和餐厅。<b>周六开到 22:00</b>，10:00 一开门就进，人最少。逛两个小时左右。</p>
+      <details class="more">
+        <summary>更多：预约凭证 · 定位 · 为什么选这天</summary>
+        <div class="more-body">
+          <p><b>已预约：10.03 周六 10:00 场，两张票。</b>免费入场，但要出示预约的二维码。<b>把两张票的截图存进手机相册</b>（当地网络时好时坏，别指望现场加载）；官网票页上的 Print my ticket 也可以存成 PDF。</p>
+          <p><b>Google 上的钉位可能不准。</b>官网地址是 Amir Temur Str 6, Building B；票上写的位置码是 <span class="mono">874H+HW</span>（和 Google 钉位只差约 60 米）。有评论说入口在平行的 Shahrisabz 街那一侧，夹在塔什干电力公司和 Westminster 国际大学之间（评论写于开馆前，现在可能已修正）。<b>以官网的 Yandex 定位为准：</b><a href="https://yandex.uz/maps/-/CPSN5OYD">yandex.uz/maps/-/CPSN5OYD</a>。到了如果找不到门，走一圈旁边那条平行的街。</p>
+          <p>为什么放在周六上午：周一闭馆（10.05 撞上），周二早上（10.06）被米诺清真寺和抓饭占满，周五（10.02）从早到晚已满，只有今天上午是空的。周五虽然开到 22:00，要去只能砍掉独立广场那一段。</p>
+        </div>
+      </details>
+    </div></li>
+    <li><span class="t">12:15</span><div class="slot">
+      <h3>午饭 → <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Reikartz+Sote+Tashkent">回酒店</a>取行李<span class="tag">购物</span></h3>
+      <p>在美术馆或酒店附近吃饭都行。CCA 餐厅官网写的是现代演绎的乌兹别克菜、季节菜单，没查到菜单和价格，现场看一眼再决定；不合适就回 Reikartz 附近找一家（打车约 9 分钟，3.8 公里）。</p>
+      <p>吃完回酒店取行李，顺路找家超市<b>买好火车上的水和零食</b>——车程 4 小时多，餐车不能指望。<span class="mono">14:00</span> 前搞定，14:30 出发去南站。</p>
+    </div></li>
+    <li><span class="t">14:30</span><div class="slot">
+      <h3>出发去<a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Toshkent+Janubiy+railway+station">塔什干南站</a> <span class="lat">Toshkent Janubiy</span></h3>
+      <p><b>南站在市区南郊，和 10.05 到达的主站不是一个站。</b>从 Reikartz 过去 Google 量下来约 <span class="mono">9</span> 公里、17 分钟（平时路况），周六下午按 25–30 分钟留。进站要过安检、查护照，<span class="mono">15:20</span> 前到站台层比较踏实。</p>
+      <p>时间是够的，所以 CCA 可以放心逛；但别把回酒店取行李拖过 14:00。</p>
+    </div></li>
+    <li><span class="t">16:00</span><div class="slot">
+      <h3>054ФА 开车 · 12 车 009 / 011 座</h3>
+      <p>4 小时 14 分。<b>这趟是卧铺车，你们两张都是下铺，中间带小桌子</b>——比 Afrosiyob 高速车慢，但能躺能靠、东西摊得开，四小时反而比硬座舒服得多。</p>
+      <p>把水和零食摆桌上，沿途是草原和棉田，天黑前那段窗外挺好看。带个充电宝。</p>
+    </div></li>
+    <li><span class="t">20:14</span><div class="slot">
+      <h3>抵达撒马尔罕，入住 <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Continental+Hotel+Universitet+xiyoboni+7+Samarkand">Continental</a></h3>
+      <p>入住 <b>Continental</b>（Universitet xiyoboni 7）。<a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Samarkand+railway+station">火车站</a>到酒店打车约 <span class="mono">15</span> 分钟（6.4 公里）。到店已晚，酒店或附近吃点就休息，明天是重头戏。</p>
+    </div></li>
+  </ul>
+<div class="caption">
+<span class="caption-label">发圈文案 · Day 2</span>
+<p>上午去了刚开馆的塔什干当代艺术中心（CCA Tashkent），是 1912 年的旧电车库改建的，正展的是首展 Hikmah。下午坐卧铺火车去撒马尔罕，四个多小时车程，晚上八点多到站。</p>
+<div class="tags">#CCATashkent #塔什干当代艺术中心 #乌兹别克火车 #撒马尔罕</div>
+</div>
+</article>
+
+<article class="day" id="day3">
+  <div class="day-head">
+    <span class="day-n">DAY 3</span><span class="day-date">10.04 周日</span>
+    <span class="day-where">撒马尔罕 · 全程最出片的一天</span>
+  </div>
+  <ul class="rail">
+    <li><span class="t">08:30</span><div class="slot">
+      <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Shah-i-Zinda+Samarkand">沙赫静达</a> <span class="lat">Shah-i-Zinda</span><span class="tag">必拍</span><span class="tag dress-soft">着装</span></h3>
+      <figure class="photo"><img src="images/shah-i-zinda.jpg" alt="沙赫静达陵墓群入口" loading="lazy" width="1100" height="825"><figcaption>照片 · <a href="https://commons.wikimedia.org/wiki/File:Shah-i-Zinda,_Samarkand_(Shohi-Zinda_majmuasi,_Samarqand,_%D0%A8%D0%B0%D1%85%D0%B8_%D0%97%D0%B8%D0%BD%D0%B4%D0%B0).jpg">Wikimedia Commons</a></figcaption></figure>
+      <p>一条两侧全是青蓝色瓷砖陵墓的窄巷，是整个中亚最好拍的地方，没有之一。<b>必须一早去</b>：九点后旅行团涌入，巷子窄到拍不出干净背景；早上光线也柔。</p>
+      <p>从 Continental 过去 3.8 公里，走路要 50 分钟，<b>早上直接打车</b>，08:15 出门。</p>
+      <p><b>这里是朝圣地，不只是景点</b>：本地人来扫墓祈祷，遮肩遮膝，女士备一条披肩随时能盖头，别穿吊带短裤。这条正好和下面的拍照建议是一回事。</p>
+      <p>你们这天穿<b>纯色长裙（米白、驼、酒红、正红都行，避开花色和蓝色）</b>，站在蓝瓷砖门洞里怎么拍都好看。这是全程最该认真打扮的一天。</p>
+    </div></li>
+    <li><span class="t">10:30</span><div class="slot">
+      <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Bibi-Khanym+Mosque+Samarkand">比比哈努姆清真寺</a> ＋ <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Siab+Bazaar+Samarkand">西亚布巴扎</a> <span class="lat">Siab Bazaar</span><span class="tag">购物</span></h3>
+      <figure class="photo"><img src="images/bibi-khanym.jpg" alt="比比哈努姆清真寺" loading="lazy" width="1100" height="825"><figcaption>照片 · <a href="https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B5%D1%87%D0%B5%D1%82%D1%8C_%D0%91%D0%B8%D0%B1%D0%B8_%D0%A5%D0%B0%D0%BD%D1%83%D0%BC._%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%BA%D0%B0%D0%BD%D0%B4.jpg">Wikimedia Commons</a></figcaption></figure>
+      <p>清真寺体量巨大，拍人像很有气势。旁边就是西亚布巴扎——比塔什干的楚苏干净整齐得多，摊位码得漂亮：现烤的撒马尔罕大馕、彩色干果、香料山。买馕当场吃一个，这是本地人认的"最好吃的馕"。</p>
+    </div></li>
+    <li><span class="t">12:30</span><div class="slot">
+      <h3>午饭 · <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Bibikhanum+Teahouse+Samarkand">Bibikhanum Teahouse</a><span class="tag">备选 · 现场选</span></h3>
+      <p>就在清真寺对面，庭院式茶馆，环境安静有格调，本地菜做得清爽不油。走了一上午在这儿坐一小时。</p>
+    </div></li>
+    <li><span class="t">13:45</span><div class="slot">
+      <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Toshkent+kochasi+Samarkand">Tashkent 街</a>小摊<span class="tag">购物</span><span class="tag">顺路</span></h3>
+      <p><b>这条街本来就是你们要走的那段路</b>——从比比哈努姆往雷吉斯坦走的整条 Tashkent 街，已经改成步行街，两侧全是摊子：陶瓷、丝巾、细密画、刺绣、小挂毯、磁贴，琳琅满目，边走边挑，不用专门安排时间。</p>
+      <p>它是游客街，<b>开口价偏高，一定要砍</b>。真要买量大的便宜货，留到塔什干楚苏外围的 Gold Center；这条街适合挑单件精致的、当场能看到手艺的东西。走走停停算 45 分钟，走完正好路过雷吉斯坦，继续往前就是古尔埃米尔。</p>
+    </div></li>
+    <li><span class="t">14:45</span><div class="slot">
+      <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Gur-e-Amir+Mausoleum+Samarkand">古尔埃米尔陵</a> <span class="lat">Gur-e-Amir</span><span class="tag dress-soft">着装</span></h3>
+      <figure class="photo"><img src="images/gur-e-amir.jpg" alt="古尔埃米尔陵金色穹顶" loading="lazy" width="1100" height="825"><figcaption>照片 · <a href="https://commons.wikimedia.org/wiki/File:ShrineofAmirTimur.jpg">Wikimedia Commons</a></figcaption></figure>
+      <p>帖木儿的墓，金色穹顶内部是全城最华丽的室内空间。规模不大，一小时足够，正好避开下午最晒的时段。</p>
+      <p>陵墓场所，<b>遮肩遮膝</b>即可，不强制遮头。</p>
+      <p><b>离 Continental 只有 750 米</b>（步行约 10 分钟）。走累了可以顺路回房间躺半小时，再出门去雷吉斯坦。</p>
+    </div></li>
+    <li><span class="t">16:00</span><div class="slot">
+      <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Registan+Samarkand">雷吉斯坦广场</a> <span class="lat">Registan</span><span class="tag">必拍</span><span class="tag">购物</span><span class="tag dress-soft">着装</span></h3>
+      <figure class="photo"><img src="images/registan.jpg" alt="雷吉斯坦广场三座经学院" loading="lazy" width="1100" height="825"><figcaption>照片 · <a href="https://commons.wikimedia.org/wiki/File:RegistanSquare_Samarkand.jpg">Wikimedia Commons</a></figcaption></figure>
+      <p>撒马尔罕的门面。白天进院子逛三座经学院，里面的拱廊已经改成手工艺店：陶瓷、丝巾、细密画、地毯。<b>这里是全程买伴手礼最好的地方</b>，东西比巴扎精致，可以还价（开口价砍到六七成常见）。</p>
+      <p>院子和店铺<b>没有着装要求</b>，随便穿；只有 Tilya-Kori 那间金色内殿仍是礼拜空间，进去时女士把披肩搭上头就行。</p>
+    </div></li>
+    <li><span class="t">18:45</span><div class="slot">
+      <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Registan+Samarkand">雷吉斯坦亮灯</a> ＋ 光影秀<span class="tag">夜景</span><span class="tag">当天确认</span></h3>
+      <p>天黑后整面外墙打灯（免费、天天有），是这趟旅行的封面照。找广场正对面的高台位置拍全景。</p>
+      <p><b>如果当晚有光影秀，一切以它的开演时间为准</b>，晚饭往前挪或往后推。这是全程唯一能看的一晚——入住时就让前台确认场次和购票方式。</p>
+      <p>酒店离雷吉斯坦 <span class="mono">1.3</span> 公里，走路约 18 分钟，大部分是平路，看完灯散步回去正好；累了就叫车，不用硬撑。晚饭前后各看一次也值得。</p>
+    </div></li>
+    <li><span class="t">20:00</span><div class="slot">
+      <h3>晚饭 · <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Platan+restaurant+Samarkand">Platan</a> 或 <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Old+City+restaurant+Samarkand">Old City</a></h3>
+      <p>Platan 是撒马尔罕的老牌体面馆子，欧式＋本地菜，环境和卫生都放心；Old City 是新开的大型餐厅，装修华丽、有庭院，拍照好看。两家都需要提前一天订位。</p>
+    </div></li>
+  </ul>
+<div class="caption">
+<span class="caption-label">发圈文案 · Day 3</span>
+<p>撒马尔罕这天排得最满：早上八点半去了沙赫静达，蓝色瓷砖陵墓群；然后是比比哈努姆清真寺和西亚布巴扎，中间那段路是条步行商业街；下午去了古尔埃米尔陵；傍晚是雷吉斯坦，白天看广场，天黑后看灯光。</p>
+<div class="tags">#撒马尔罕 #沙赫静达 #雷吉斯坦 #古尔埃米尔陵</div>
+</div>
+</article>
+
+<article class="day" id="day4">
+  <div class="day-head">
+    <span class="day-n">DAY 4</span><span class="day-date">10.05 周一</span>
+    <span class="day-where">撒马尔罕 → 塔什干</span>
+  </div>
+  <ul class="rail">
+    <li><span class="t">07:15</span><div class="slot">
+      <h3>出发去<a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Samarkand+railway+station">撒马尔罕火车站</a></h3>
+      <p>早班车，前一晚就跟前台说好<b>打包早餐</b>（酒店餐厅通常 8 点才开）。打车约 15 分钟（6.4 公里），<span class="mono">07:40</span> 前进站。</p>
+    </div></li>
+    <li><span class="t">08:10</span><div class="slot">
+      <h3>703ФА 开车 · 18 车 001 / 002 座</h3>
+      <p>回程是<b>普通座位，但同样带桌子</b>——前一晚让前台打包的早餐，正好在车上摊开吃。</p>
+      <p><span class="mono">12:19</span> 抵达塔什干<a class="node" href="https://maps.app.goo.gl/xZ8qscwf2K9iA8THA"><b>主站</b></a>（乌兹别克语 <span class="lat">Toshkent shimoliy</span>，Google 上也能搜到 Stantsiya Tashkent Pass Tsentr.，是同一处，两个记录相差不到 100 米）。打车约 <span class="mono">15</span> 分钟（4.8 公里）到 <b>Holiday Inn Tashkent City</b>。</p>
+    </div></li>
+    <li><span class="t">13:00</span><div class="slot">
+      <h3>午饭 ＋ 入住 <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Holiday+Inn+Tashkent+City+3+Ukchi+street">Holiday Inn</a> 休整</h3>
+      <p>车上坐了四小时，回酒店放下行李歇一会儿再出门。</p>
+      <p><b>Holiday Inn 15:00 之后才能入住，12:19 到站肯定进不了房</b>——先把行李寄存前台再出门吃饭，别拖着箱子找餐厅。</p>
+    </div></li>
+    <li><span class="t">14:30</span><div class="slot">
+      <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=State+Museum+of+Applied+Arts+of+Uzbekistan+Tashkent">应用美术馆</a> <span class="lat">Museum of Applied Arts</span><span class="tag">拍照</span><span class="tag mono" style="letter-spacing:.04em">9:00–18:00 全周开放</span></h3>
+      <figure class="photo"><img src="images/applied-arts.jpg" alt="应用美术馆庭院与外立面" loading="lazy" width="1100" height="825"><figcaption>照片 · <a href="https://commons.wikimedia.org/wiki/File:Tashkent_museum_of_applied_arts.jpg">Wikimedia Commons</a></figcaption></figure>
+      <p>在市中心南片，19 世纪的旧宅改的——<b>房子本身就是最大的展品</b>：满屋雕花石膏（ganch）、彩绘天顶、彩色玻璃窗，一间套一间。展品是苏扎尼刺绣、陶器、织毯、金线绣袍和民族服饰。</p>
+      <p>不大，一个半小时看完。室内、干净、不晒，是这趟少有的"坐下来慢慢看"的地方。对做设计的人来说，这里的纹样比展签有用得多——刺绣的配色和石膏的几何分割都值得拍下来存着。</p>
+      <p class="zone" style="color:var(--turq)"><b>全周无休、开到 18:00</b>，所以这站没有闭馆风险，也是全程最灵活的一格：火车晚点、上午拖沓、天气不好，都可以往后挪甚至换到别的半天。</p>
+    </div></li>
+    <li><span class="t">16:15</span><div class="slot">
+      <h3>购物下午<span class="tag">购物</span><span class="h-extra">· <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Human+House+Tashkent">Human House</a> · <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Tashkent+City+Mall">Tashkent City Mall</a> · <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Compass+shopping+mall+Tashkent">Compass</a></span></h3>
+      <p><b>Human House</b>——政府背景的手工艺精品店，苏扎尼刺绣、陶瓷、丝巾、细密画都有，明码标价不用砍，包装体面，最适合买送人的礼物。<b>接在美术馆后面是有意的</b>：先看博物馆里的老手艺，再看现在的匠人做成什么样，挑东西的眼光完全不一样。</p>
+      <p>再逛 <b>Tashkent City Mall</b> 或 <b>Compass</b>：本地品牌、化妆品、超市，空调干净好走，也是补买行李箱空隙的地方。</p>
+    </div></li>
+    <li><span class="t">19:00</span><div class="slot">
+      <h3>晚饭 · <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Afsona+restaurant+Tashkent">Afsona</a> / <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Caravan+restaurant+Tashkent">Caravan</a> / <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Bibliotheka+bar+and+grill+Tashkent">Bibliotheka</a></h3>
+      <p>Afsona 做改良乌兹别克菜，摆盘讲究、分量适中，不像本地大馆子那么油腻；<b>Caravan</b> 民族风装修、菜单有图有英文、卫生间干净，游客和本地中产都在这儿吃，挑剔的长辈在这家基本不会有意见；Bibliotheka 是图书馆主题餐厅，环境安静适合聊天。三家都在市中心南片，今天住回塔什干、下午又在中心购物，正好顺路。</p>
+      <p>吃完可以去看一眼阿利舍尔·纳沃伊剧院的夜景外立面。</p>
+      <p>Holiday Inn 在 Tashkent City 园区里，回酒店后想散步，园区里的公园就在附近（具体距离以地图为准）。</p>
+    </div></li>
+  </ul>
+<div class="caption">
+<span class="caption-label">发圈文案 · Day 4</span>
+<p>早上坐火车从撒马尔罕回塔什干，中午到站。下午去了应用美术馆，19 世纪的老宅子改建的，然后去 Human House 买了些手工艺品，苏扎尼刺绣和陶瓷居多，当伴手礼。</p>
+<div class="tags">#塔什干 #应用美术馆 #HumanHouse #乌兹别克手工艺</div>
+</div>
+</article>
+
+<article class="day" id="day5">
+  <div class="day-head">
+    <span class="day-n">DAY 5</span><span class="day-date">10.06 周二</span>
+    <span class="day-where">塔什干 → 回国</span>
+  </div>
+  <ul class="rail">
+    <li><span class="t">09:30</span><div class="slot">
+      <h3>退房，行李寄存 <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Holiday+Inn+Tashkent+City+3+Ukchi+street">Holiday Inn</a></h3>
+      <p>Holiday Inn <b>12:00 前退房</b>，所以 09:30 就办好，行李放前台，轻装出门玩到下午。</p>
+    </div></li>
+    <li><span class="t">10:00</span><div class="slot">
+      <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Minor+Mosque+Tashkent">米诺清真寺</a> <span class="lat">Minor Mosque</span><span class="tag">拍照</span><span class="tag dress">遮头</span></h3>
+      <figure class="photo"><img src="images/minor-mosque.jpg" alt="米诺清真寺白色大理石外观" loading="lazy" width="1100" height="825"><figcaption>照片 · <a href="https://commons.wikimedia.org/wiki/File:Minor_Mosque_Tashkent.jpg">Wikimedia Commons</a></figcaption></figure>
+      <p>通体白色大理石＋淡蓝穹顶，2014 年新建，是全塔什干最干净、最"上镜不费力"的一处。半小时拍完，旁边就是 Anhor 运河边的步道，可以散一会儿。</p>
+      <p><b>在用的清真寺</b>：进内殿要遮头、脱鞋，男士别穿短裤。门口通常备有可借的头巾，但自己带更省事。只在外面拍照则没要求。</p>
+      <p class="zone" style="color:var(--turq)">放在今天，是因为它和下一站抓饭中心同属电视塔那一片北区，几分钟车程。</p>
+    </div></li>
+    <li><span class="t">11:45</span><div class="slot">
+      <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Central+Asian+Plov+Center+Besh+Qozon+Tashkent">中央抓饭中心</a> <span class="lat">Besh Qozon</span><span class="tag">必吃</span></h3>
+      <figure class="photo"><img src="images/besh-qozon.jpg" alt="中央抓饭中心两层大厅，座无虚席" loading="lazy" width="1100" height="825"><figcaption>照片 · <a href="https://commons.wikimedia.org/wiki/File:Central_Asian_Plov_Centre.jpg">Wikimedia Commons</a></figcaption></figure>
+      <p>在电视塔脚下，从米诺清真寺过来很近。一口直径两米的大锅现做手抓饭，是塔什干的招牌场面，也很出片。<b>必须中午去——通常 13:00 前后就卖光了。</b></p>
+      <p>人多、环境是大排档式的，你们如果介意就打包一份，找旁边干净的地方吃。</p>
+    </div></li>
+    <li><span class="t">13:30</span><div class="slot">
+      <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Chorsu+Bazaar+Tashkent">楚苏巴扎</a>收尾采购<span class="tag">购物</span><span class="h-extra">· <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Gold+Center+Chorsu+Tashkent">Gold Center</a></span></h3>
+      <p>从北区往西下来，顺路。回第一天看好的干果摊，把杏干、开心果、藏红花一次买齐——最后一天买，不用背着走。用现金，小额苏姆备好。</p>
+      <p><b>外围的 Gold Center 留到今天扫尾</b>：第一天已经摸过价，今天直接砍价下手，买完直接回酒店取行李，不用背着逛。</p>
+    </div></li>
+    <li><span class="t">16:30</span><div class="slot">
+      <h3>回<a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Holiday+Inn+Tashkent+City+3+Ukchi+street">酒店</a>取行李</h3>
+    </div></li>
+    <li><span class="t">17:00</span><div class="slot">
+      <h3>出发去<a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Islam+Karimov+Tashkent+International+Airport">机场</a></h3>
+      <p>车程约 20–25 分钟（10.8 公里），<span class="mono">17:40</span> 到 T2，从容值机。MU6038 <span class="mono">20:20</span> 起飞，次日 <span class="mono">05:50</span> 落浦东。</p>
+    </div></li>
+  </ul>
+  <div class="caption">
+  <span class="caption-label">发圈文案 · Day 5</span>
+  <p>最后一天：上午米诺清真寺，中午在中央抓饭中心吃饭，下午回楚苏巴扎买了些干果，晚上飞机回国。这次是塔什干和撒马尔罕两个城市，六天五晚，下次可以考虑布哈拉和希瓦。</p>
+  <div class="tags">#塔什干 #中央抓饭中心 #楚苏巴扎 #乌兹别克斯坦</div>
+  </div>
+</article>
+
+<h2 id="hotels">已订酒店</h2>
+<p class="sec-note">三家都订好了。下面的距离是我在 Google 地图上量的（平时路况，打车时间会有出入）。</p>
+
+<div class="hotel">
+  <div class="hotel-h"><h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Reikartz+Sote+Tashkent">Reikartz Sote Tashkent</a></h3><span class="pick">10.01 – 10.03 · 2 晚</span></div>
+  <p class="zone">Furqat ko'chasi 4 · Agoda 已确认</p>
+  <p>不在老城核心，但<b>魔法城就在旁边</b>，去楚苏、公园都在 10 分钟车程内。</p>
+  <p>魔法城 <span class="mono">1.4 km / 3 分</span> · Tashkent City Park <span class="mono">2.2 km / 6 分</span> · 楚苏 <span class="mono">2.8 km / 7 分</span> · CCA <span class="mono">3.8 km / 9 分</span> · 哈兹拉提伊玛目 <span class="mono">5.4 km / 9 分</span> · 帖木儿广场约 <span class="mono">4 km</span>（走路 56 分，别走）。</p>
+  <p><b>顺带的好处：10.03 去南站只要约 17 分钟（9 km）</b>，比住市中心近得多。</p>
+</div>
+
+<div class="hotel">
+  <div class="hotel-h"><h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Continental+Hotel+Universitet+xiyoboni+7+Samarkand">Continental Hotel Samarkand</a></h3><span class="pick">10.03 – 10.05 · 2 晚</span></div>
+  <p class="zone">Universitet xiyoboni 7 · Agoda 已确认（地址以订单为准）· Google 上搜到的地点叫 continental hotel，存的时候对一下地址是不是 Universitet xiyoboni 7</p>
+  <p>古尔埃米尔 <span class="mono">750 m / 步行 10 分</span> · 雷吉斯坦 <span class="mono">1.3 km / 步行 18 分</span> · 沙赫静达 <span class="mono">3.8 km</span>（走路 51 分，打车）· 火车站 <span class="mono">6.4 km / 15 分</span>。</p>
+  <p>离雷吉斯坦步行 18 分钟，不算最近，但走的是平路，晚上看完灯可以散步回去，累了随时叫车；古尔埃米尔反而就在隔壁。沙赫静达那天早上打车去就好。</p>
+</div>
+
+<div class="hotel">
+  <div class="hotel-h"><h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Holiday+Inn+Tashkent+City+3+Ukchi+street">Holiday Inn Tashkent City</a></h3><span class="pick">10.05 – 10.06 · 1 晚</span></div>
+  <p class="zone">Tashkent City, 3 Ukchi street IBC · 携程</p>
+  <p>入住 <b>15:00 后</b>，退房 <b>12:00 前</b>。10.05 中午 12:19 到站，进不了房，先寄存行李；10.06 上午必须退房，行李继续寄存。</p>
+  <p>主站 <span class="mono">5.0 km / 13 分</span> · 楚苏 <span class="mono">2.4 km / 10 分</span> · 米诺清真寺 <span class="mono">5.7 km / 14 分</span> · CCA <span class="mono">3.6 km / 9 分</span> · 机场 <span class="mono">10.8 km / 21 分</span>。</p>
+  <div class="alert"><b>免费取消只到酒店当地时间 10 月 4 日 14:00，之后不可取消或修改。</b>那天你们在撒马尔罕，如果想改，要在下午两点前决定。另外订单里写着<b>到店另付 UZS 132,000（约 ¥75）</b>，入住时备好苏姆现金。</div>
+</div>
+
+<details class="geo">
+<summary>地理上怎么串的</summary>
+<div class="geo-body">
+<p class="sec-note">每天的点不是随便挑的——塔什干的景点分三片，同一片的放同一天，跨片的尽量只跨一次。撒马尔罕更简单，本来就是一条直线。</p>
+
+<div class="hotel">
+  <div class="hotel-h"><h3>塔什干 · 老城西片 → 地铁东进</h3><span class="pick">Day 1</span></div>
+  <p><b>哈兹拉提伊玛目 → 楚苏巴扎</b>同属老城，步行 20 分钟、打车 5 分钟。<b>库克尔达什经学院就在楚苏上方的坡顶</b>，从巴扎走上去几分钟——它是今天的机动项，Gold Center 逛超时就跳掉。楚苏本身就有地铁站，下午的路线从这里直接往东：</p>
+  <p><b>楚苏 → Alisher Navoi → Kosmonavtlar 在同一条地铁线上（2 号线），不用换乘。</b>然后折回换 1 号线，坐到 Amir Temur Xiyoboni 站，<b>帖木儿历史博物馆就在站口</b>。看完出来是帖木儿广场，再沿<b>百老汇步行街</b>往西走——这条街本身就是 Amir Temur 站到 Mustaqillik Maydoni 站之间的那段路，走完正好收在独立广场。</p>
+  <p class="zone">全天从西到东一条线，零回头。室内的博物馆排在户外散步之前，是为了赶在闭馆前进场、把黄昏光线留给露天的广场和步行街。晚上的 Magic City 就在住的酒店旁边，玩完直接回去。</p>
+</div>
+
+<div class="hotel">
+  <div class="hotel-h"><h3>塔什干 · 北片（电视塔一带）</h3><span class="pick">Day 5</span></div>
+  <p><b>米诺清真寺和中央抓饭中心是邻居</b>，都在电视塔那一片，几分钟车程。所以两个一起放在最后一天上午——先拍清真寺，再赶在卖光前吃抓饭，然后往西下来收尾逛楚苏，回酒店取行李去机场。一条向西的弧线。</p>
+</div>
+
+<div class="hotel">
+  <div class="hotel-h"><h3>塔什干 · CCA 的上午</h3><span class="pick">Day 2</span></div>
+  <p>10.03 下午要去南郊的火车站，所以上午只排一个点：<b>CCA 离酒店 3.8 公里、9 分钟车程</b>，10:00 开门进，13:15 前出来，回酒店取行李，14:30 出发去南站。一去一回都是打车，不跑别处，给南站留足余量。</p>
+</div>
+
+<div class="hotel">
+  <div class="hotel-h"><h3>撒马尔罕 · 一条直线</h3><span class="pick">Day 3</span></div>
+  <p>古尔埃米尔 — 雷吉斯坦 — 比比哈努姆／西亚布巴扎 — 沙赫静达，由西南到东北串成一条轴，<b>全长约 2.5 公里，全程可步行</b>。行程从最东北端的沙赫静达开始（必须赶早，九点后旅行团就堵满巷子），然后一路往回走。</p>
+  <p><b>串起这条轴的那段路本身就是一条步行商业街</b>——雷吉斯坦到比比哈努姆之间的 Tashkent 街，两侧全是小摊。所以"逛街"不用单独安排时间，它就是你从一个景点走到下一个景点的路。</p>
+  <p>唯一的折返是古尔埃米尔：得走过雷吉斯坦再往西南岔约 1 公里，然后折回来看雷吉斯坦亮灯。<b>这个折返躲不掉</b>——雷吉斯坦必须压轴，而来回也就 10 分钟脚程，且正好走回酒店方向。</p>
+</div>
+</div>
+</details>
+
+<h2 id="maps">地图清单</h2>
+<p class="sec-note">大部分已经存进你 Google Maps 的 <b>Uz</b> 列表了。这份清单留作对照和补漏：点链接直接跳 Google Maps，右下角「保存 / Save」→ 选 Uz。</p>
+<div class="alert top">
+  <b>用当地英文名搜，别用中文。</b>下面每条链接都已经填好乌兹别克/英文名称——中文名在当地的地图数据里基本搜不到，靠中文找会白费功夫。少数几条我标了"名称可能对不上"，那几个到现场问人更快。
+</div>
+
+<div class="maps">
+  <div class="maps-h"><h3>交通节点</h3><span class="day-n">先存这四个</span></div>
+  <ol>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Islam+Karimov+Tashkent+International+Airport">Islam Karimov Tashkent International Airport</a><span class="cn">塔什干机场 T2</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Toshkent+Janubiy+railway+station">Toshkent Janubiy railway station</a><span class="cn">塔什干南站 · 10.03 发车</span><span class="warn">Google 里叫 Tashkent yuzhniy。在南郊，从 Reikartz 约 17 分钟车程，周六下午留 25–30 分钟。务必先存这个。</span></li>
+    <li><a href="https://maps.app.goo.gl/xZ8qscwf2K9iA8THA">Toshkent Railway Station (Shimoliy)</a><span class="cn">塔什干主站 · 10.05 到达</span><span class="warn">用 Yulovchi 这个名字搜会跳到南站，别用；Google 上也有个叫 Stantsiya Tashkent Pass Tsentr. 的记录，是同一处，相差不到 100 米，存哪个都行。</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Samarkand+railway+station">Samarkand railway station</a><span class="cn">撒马尔罕火车站</span></li>
+  </ol>
+</div>
+
+<div class="maps">
+  <div class="maps-h"><h3>塔什干 · 老城西片</h3><span class="day-n">DAY 1</span></div>
+  <ol>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Hazrati+Imam+Complex+Tashkent">Hazrati Imam Complex</a><span class="cn">哈兹拉提伊玛目</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Chorsu+Bazaar+Tashkent">Chorsu Bazaar</a><span class="cn">楚苏巴扎</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Gold+Center+Chorsu+Tashkent">Gold Center（楚苏外围）</a><span class="cn">便宜伴手礼</span><span class="warn">名称可能对不上——它是巴扎外围的一大片售卖区，到楚苏之后问人或直接沿外围走更快。</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Kukeldash+Madrasah+Tashkent">Kukeldash Madrasah</a><span class="cn">库克尔达什经学院 · 备选</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Juma+Mosque+Tashkent">Juma Mosque</a><span class="cn">主麻清真寺 · 紧挨上一条</span></li>
+  </ol>
+</div>
+
+<div class="maps">
+  <div class="maps-h"><h3>塔什干 · 地铁与市中心</h3><span class="day-n">DAY 1</span></div>
+  <ol>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Alisher+Navoi+metro+station+Tashkent">Alisher Navoi metro station</a><span class="cn">青蓝穹顶长廊</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Kosmonavtlar+metro+station+Tashkent">Kosmonavtlar metro station</a><span class="cn">宇航员站 · 最出片</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Mustaqillik+Maydoni+metro+station+Tashkent">Mustaqillik Maydoni metro station</a><span class="cn">白色大理石柱</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=State+Museum+of+the+Temurids+Tashkent">State Museum of the Temurids</a><span class="cn">帖木儿历史博物馆 · 17:00 闭馆</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Amir+Timur+Square+Tashkent">Amir Timur Square</a><span class="cn">帖木儿广场 · 钟楼</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Sailgokh+Street+Broadway+Tashkent">Sailgokh Street（Broadway）</a><span class="cn">百老汇步行街</span><span class="warn">是条街不是单点，存起来只是定位大概位置。</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Independence+Square+Mustaqillik+Maydoni+Tashkent">Independence Square</a><span class="cn">独立广场</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Magic+City+Tashkent">Magic City</a><span class="cn">魔法城 · 夜景</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Tashkent+City+Park">Tashkent City Park</a><span class="cn">音乐喷泉</span></li>
+  </ol>
+</div>
+
+<div class="maps">
+  <div class="maps-h"><h3>塔什干 · Day 2 上午</h3><span class="day-n">DAY 2</span></div>
+  <ol>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=874H%2BHW+Tashkent">CCA Tashkent（票上的位置码 874H+HW）</a><span class="cn">当代艺术中心 · 10.03 10:00</span><span class="warn">位置码没有地名，存的时候手动改名成 CCA Tashkent。</span></li>
+    <li><a href="https://yandex.uz/maps/-/CPSN5OYD">CCA Tashkent（官网 Yandex 定位）</a><span class="cn">官方给的位置</span></li>
+      </ol>
+</div>
+
+<div class="maps">
+  <div class="maps-h"><h3>塔什干 · 北片与购物</h3><span class="day-n">DAY 4–5</span></div>
+  <ol>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Minor+Mosque+Tashkent">Minor Mosque</a><span class="cn">米诺清真寺</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Central+Asian+Plov+Center+Besh+Qozon+Tashkent">Central Asian Plov Center（Besh Qozon）</a><span class="cn">中央抓饭中心 · 13:00 前</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=State+Museum+of+Applied+Arts+of+Uzbekistan+Tashkent">State Museum of Applied Arts of Uzbekistan</a><span class="cn">应用美术馆 · 9:00–18:00 全周</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Human+House+Tashkent">Human House</a><span class="cn">手工艺精品 · 明码标价</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Samarqand+Darvoza+shopping+mall+Tashkent">Samarqand Darvoza Mall</a><span class="cn">商场</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Tashkent+City+Mall">Tashkent City Mall</a><span class="cn">商场</span></li>
+  </ol>
+</div>
+
+<div class="maps">
+  <div class="maps-h"><h3>塔什干 · 餐厅</h3><span class="day-n">按需</span></div>
+  <ol>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Caravan+restaurant+Tashkent">Caravan</a><span class="cn">民族风 · 最保险</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Afsona+restaurant+Tashkent">Afsona</a><span class="cn">改良乌兹别克菜</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Bibliotheka+bar+and+grill+Tashkent">Bibliotheka Bar &amp; Grill</a><span class="cn">图书馆主题 · 安静</span></li>
+  </ol>
+</div>
+
+<div class="maps">
+  <div class="maps-h"><h3>撒马尔罕 · 一条直线</h3><span class="day-n">DAY 3</span></div>
+  <ol>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Shah-i-Zinda+Samarkand">Shah-i-Zinda</a><span class="cn">沙赫静达 · 08:30 必须早到</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Bibi-Khanym+Mosque+Samarkand">Bibi-Khanym Mosque</a><span class="cn">比比哈努姆清真寺</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Siab+Bazaar+Samarkand">Siab Bazaar</a><span class="cn">西亚布巴扎 · 大馕</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Bibikhanum+Teahouse+Samarkand">Bibikhanum Teahouse</a><span class="cn">庭院茶馆 · 午饭</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Toshkent+kochasi+Samarkand">Toshkent 街小摊</a><span class="cn">步行商业街</span><span class="warn">是条街不是单点——就是雷吉斯坦走到比比哈努姆的那段路，不用刻意导航。</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Gur-e-Amir+Mausoleum+Samarkand">Gur-e-Amir Mausoleum</a><span class="cn">古尔埃米尔陵</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Registan+Samarkand">Registan</a><span class="cn">雷吉斯坦 · 亮灯 & 光影秀</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Platan+restaurant+Samarkand">Platan</a><span class="cn">晚饭 · 提前订位</span></li>
+    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Old+City+restaurant+Samarkand">Old City</a><span class="cn">晚饭 · 提前订位</span></li>
+  </ol>
+</div>
+
+<h2 id="checklist">出发前把这几件事办掉</h2>
+<ul class="checks">
+  <li><b>签证</b>——中国普通护照赴乌免签，但停留天数和最新规定<b>请以出发前的官方口径为准</b>，这类政策每年都在调。本次全程 6 天，在任何版本的免签期内都够用。</li>
+  <li><b>现金</b>——带足美元现钞（新版、无破损），到当地换苏姆。银联在部分 ATM 和大商场能用，但别当主力。小额苏姆备着，巴扎和出租车都要现金。</li>
+  <li><b>Yandex Go</b>——落地前装好并绑好手机号，这是全国通用的打车软件，比路边车便宜且不用讲价。</li>
+  <li><b>离线地图</b>——在 Google Maps 里把塔什干和撒马尔罕两块区域<b>下载成离线地图</b>，再按上面的清单把地点存进列表。当地网络时好时坏，离线包能保证走到哪儿都能定位。</li>
+  <li><b>插头</b>——220V 欧标双圆脚，带两个转换头（房间插座往往不够）。</li>
+  <li><b>穿什么</b>——十月初白天 <span class="mono">25–28°C</span>、早晚 <span class="mono">12–15°C</span>，干燥、昼夜温差大。白天单衣＋外套，一双走得动路的鞋。女士各带一条素色薄披肩——<b>标了「遮头」的三处（哈兹拉提伊玛目 / 库克尔达什 / 米诺清真寺）进内殿必须用它</b>，标「着装」的几处遮肩遮膝即可；顺带它也是全程最好用的拍照道具。街上日常穿着没有任何限制。</li>
+  <li><b>火车票</b>——护照原件随身，进站安检查票查护照。两张票的车站不同，把上面那条提醒记牢。</li>
+  <li><b>订位</b>——撒马尔罕 Platan / Old City、塔什干 Afsona 建议提前一天订，周末晚上尤其。</li>
+  <li><b>CCA 票</b>——已预约 10.03 周六 10:00，两张。<b>两张票的截图都存进手机相册</b>，入场要出示二维码。</li>
+  <li><b>Holiday Inn 取消截止</b>——酒店当地时间 <b>10.04 14:00</b> 前免费取消，之后不可取消或修改。到店另付 UZS 132,000（约 ¥75），备苏姆现金。</li>
+  <li><b>光影秀</b>——到撒马尔罕办入住时<b>第一件事</b>就是让前台确认 10.04 晚上雷吉斯坦有没有演出、几点、怎么买票。排期不稳定，只有这一晚的机会。</li>
+  <li><b>帖木儿历史博物馆 17:00 闭馆</b>——排在 10.02（周五），<b>最晚 15:30 进场</b>。出发前再查一次闭馆日：这边博物馆周一常闭馆，而 10.05 是周一，这一站补不了。<br>（应用美术馆已确认 <b>9:00–18:00、全周开放</b>，不用担心。）</li>
+  <li><b>砍价的心理价</b>——楚苏外围 Gold Center 的手工外套约 10–20 万苏姆，别处 30–50 万。出发前按当天汇率换算一遍，心里有个人民币的锚，现场才砍得动。</li>
+  <li><b>肠胃</b>——当地菜偏油偏羊，带上常用的肠胃药和一点国内的茶包／挂面，长辈吃不惯时能救急。喝瓶装水，别喝生水。</li>
+</ul>
+
+<p class="foot">行程按已出票的航班和火车时刻倒排。餐厅营业时间、景点开放时间和门票价格可能变动，出门前用地图 app 再确认一次当天状态。所有时间均为当地时间（比北京时间晚 3 小时）。</p>
+
+</div>
+
+</body></html>
