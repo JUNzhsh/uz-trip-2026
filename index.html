@@ -145,6 +145,14 @@ h2{
   content:"";position:absolute;left:70px;top:0;bottom:0;width:1px;background:var(--rule);
 }
 .rail>li:first-child::before{top:22px}
+.rail>li.transit{padding:5px 0}
+.rail>li.transit .t{color:var(--ink-mute);font-weight:500}
+.transit-row{
+  padding-left:16px;font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:12px;color:var(--ink-mute);letter-spacing:.01em;
+  display:flex;align-items:center;min-height:20px;
+}
+.transit-row b{color:var(--ink-soft);font-weight:600}
 .rail>li:last-child::before{bottom:auto;height:22px}
 .t{
   font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums;
@@ -370,6 +378,7 @@ details.geo>summary:focus-visible{outline:2px solid var(--lapis);outline-offset:
       <p>乌兹时间比北京<b>晚 3 小时</b>，落地时国内已是 21:40。过关加取行李算 <span class="mono">40–60</span> 分钟。</p>
       <p>在机场换 <b>50–100 美元</b> 现金应急就够，市区兑换点汇率更好。打车认准 Yandex Go，别搭航站楼门口拉客的。</p>
     </div></li>
+    <li class="transit"><span class="t">28 分</span><div class="transit-row">打车 · 11.9 km</div></li>
     <li><span class="t">20:00</span><div class="slot">
       <h3>入住 <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Reikartz+Sote+Tashkent">Reikartz</a>，今晚不安排</h3>
       <p>Reikartz Sote Tashkent（Furqat ko'chasi 4）。酒店附近随便吃一口，第一晚倒时差，早睡。</p>
@@ -394,6 +403,7 @@ details.geo>summary:focus-visible{outline:2px solid var(--lapis);outline-offset:
       <p>白墙、蓝顶、大片开阔广场，几乎没有游客拥挤感，地面干净——第一站放这里，你们对这趟旅行的第一印象就稳了。上午侧光，正面拍建筑最好看。</p>
       <p>女士带一条<b>素色薄披肩</b>，进清真寺内殿要遮头，也是最好用的拍照道具。</p>
     </div></li>
+    <li class="transit"><span class="t">5 分</span><div class="transit-row">打车 · 5.2 km（步行 20 分）</div></li>
     <li><span class="t">10:30</span><div class="slot">
       <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Chorsu+Bazaar+Tashkent">楚苏巴扎</a> <span class="lat">Chorsu Bazaar</span><span class="tag">购物</span><span class="h-extra">· <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Gold+Center+Chorsu+Tashkent">Gold Center</a></span></h3>
       <figure class="photo"><img src="images/chorsu.jpg" alt="楚苏巴扎蓝色大圆顶内部" loading="lazy" width="1100" height="825"><figcaption>照片 · <a href="https://commons.wikimedia.org/wiki/File:Chorsu_Market_general_view.jpg">Wikimedia Commons</a></figcaption></figure>
@@ -401,6 +411,7 @@ details.geo>summary:focus-visible{outline:2px solid var(--lapis);outline-offset:
       <p>杏干、无花果干、开心果、藏红花可以在这里比价，最后一天再回来买（当天买当天背两天）。</p>
       <div class="alert"><b>买伴手礼别在圆顶里买——去外围的 Gold Center。</b>就在大巴扎外围，售卖区域非常大、非常多，本地人都在这儿买东西，价格亲民得多，而且<b>可以砍价</b>。<br>一件手工外套在这里 <span class="mono">10–20 万</span>苏姆，同样的东西在撒马尔罕或塔什干别处要 <span class="mono">30–50 万</span>。想买便宜好看的伴手礼，就来这儿。</div>
     </div></li>
+    <li class="transit"><span class="t">10 分</span><div class="transit-row">步行 · 700 m</div></li>
     <li><span class="t">11:45</span><div class="slot">
       <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Kukeldash+Madrasah+Tashkent">库克尔达什经学院</a> <span class="lat">Ko'kaldosh Madrasasi</span><span class="tag">备选</span><span class="tag dress">遮头</span><span class="h-extra">· <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Juma+Mosque+Tashkent">主麻清真寺</a></span></h3>
       <figure class="photo"><img src="images/kukeldash.jpg" alt="库克尔达什经学院内院" loading="lazy" width="1100" height="825"><figcaption>照片 · <a href="https://commons.wikimedia.org/wiki/File:Kukeldash_Madrasah_inner_yard.jpg">Wikimedia Commons</a></figcaption></figure>
@@ -432,6 +443,7 @@ details.geo>summary:focus-visible{outline:2px solid var(--lapis);outline-offset:
       <p>出博物馆就是<b>帖木儿广场和塔什干钟楼</b>。然后沿百老汇往西走——这条画摊和街头画师的步行街，本身就是 Amir Temur 站到 Mustaqillik Maydoni 站之间的那段路，<b>走完正好收在独立广场，完全不用回头</b>。</p>
       <p>独立广场的大片草坪、白色纪念门和喷泉，黄昏这个点光线最好。走累了百老汇上随处能喝杯咖啡。</p>
     </div></li>
+    <li class="transit"><span class="t">15–20 分</span><div class="transit-row">打车</div></li>
     <li><span class="t">19:00</span><div class="slot">
       <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Magic+City+Tashkent">魔法城</a> <span class="lat">Magic City</span><span class="tag">夜景</span><span class="h-extra">· <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Tashkent+City+Park">Tashkent City Park</a></span></h3>
       <figure class="photo"><img src="images/magic-city.jpg" alt="魔法城夜间灯光与倒影" loading="lazy" width="1100" height="825"><figcaption>照片 · <a href="https://commons.wikimedia.org/wiki/File:Magic_City_with_lights.jpg">Wikimedia Commons</a></figcaption></figure>
@@ -513,6 +525,7 @@ details.geo>summary:focus-visible{outline:2px solid var(--lapis);outline-offset:
       <p><b>这里是朝圣地，不只是景点</b>：本地人来扫墓祈祷，遮肩遮膝，女士备一条披肩随时能盖头，别穿吊带短裤。这条正好和下面的拍照建议是一回事。</p>
       <p>你们这天穿<b>纯色长裙（米白、驼、酒红、正红都行，避开花色和蓝色）</b>，站在蓝瓷砖门洞里怎么拍都好看。这是全程最该认真打扮的一天。</p>
     </div></li>
+    <li class="transit"><span class="t">6 分</span><div class="transit-row">打车 · 2.1 km（步行 27 分）</div></li>
     <li><span class="t">10:30</span><div class="slot">
       <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Bibi-Khanym+Mosque+Samarkand">比比哈努姆清真寺</a> ＋ <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Siab+Bazaar+Samarkand">西亚布巴扎</a> <span class="lat">Siab Bazaar</span><span class="tag">购物</span></h3>
       <figure class="photo"><img src="images/bibi-khanym.jpg" alt="比比哈努姆清真寺" loading="lazy" width="1100" height="825"><figcaption>照片 · <a href="https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B5%D1%87%D0%B5%D1%82%D1%8C_%D0%91%D0%B8%D0%B1%D0%B8_%D0%A5%D0%B0%D0%BD%D1%83%D0%BC._%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%BA%D0%B0%D0%BD%D0%B4.jpg">Wikimedia Commons</a></figcaption></figure>
@@ -534,6 +547,7 @@ details.geo>summary:focus-visible{outline:2px solid var(--lapis);outline-offset:
       <p>陵墓场所，<b>遮肩遮膝</b>即可，不强制遮头。</p>
       <p><b>离 Continental 只有 750 米</b>（步行约 10 分钟）。走累了可以顺路回房间躺半小时，再出门去雷吉斯坦。</p>
     </div></li>
+    <li class="transit"><span class="t">约 10 分</span><div class="transit-row">步行 · 约 1 km</div></li>
     <li><span class="t">16:00</span><div class="slot">
       <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Registan+Samarkand">雷吉斯坦广场</a> <span class="lat">Registan</span><span class="tag">必拍</span><span class="tag">购物</span><span class="tag dress-soft">着装</span></h3>
       <figure class="photo"><img src="images/registan.jpg" alt="雷吉斯坦广场三座经学院" loading="lazy" width="1100" height="825"><figcaption>照片 · <a href="https://commons.wikimedia.org/wiki/File:RegistanSquare_Samarkand.jpg">Wikimedia Commons</a></figcaption></figure>
@@ -546,6 +560,7 @@ details.geo>summary:focus-visible{outline:2px solid var(--lapis);outline-offset:
       <p><b>如果当晚有光影秀，一切以它的开演时间为准</b>，晚饭往前挪或往后推。这是全程唯一能看的一晚——入住时就让前台确认场次和购票方式。</p>
       <p>酒店离雷吉斯坦 <span class="mono">1.3</span> 公里，走路约 18 分钟，大部分是平路，看完灯散步回去正好；累了就叫车，不用硬撑。晚饭前后各看一次也值得。</p>
     </div></li>
+    <li class="transit"><span class="t">12 分</span><div class="transit-row">打车 · 2.5 km（步行 33 分）</div></li>
     <li><span class="t">20:00</span><div class="slot">
       <h3>晚饭 · <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Platan+restaurant+Samarkand">Platan</a> 或 <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Old+City+restaurant+Samarkand">Old City</a></h3>
       <p>Platan 是撒马尔罕的老牌体面馆子，欧式＋本地菜，环境和卫生都放心；Old City 是新开的大型餐厅，装修华丽、有庭院，拍照好看。两家都需要提前一天订位。</p>
@@ -578,6 +593,7 @@ details.geo>summary:focus-visible{outline:2px solid var(--lapis);outline-offset:
       <p>车上坐了四小时，回酒店放下行李歇一会儿再出门。</p>
       <p><b>Holiday Inn 15:00 之后才能入住，12:19 到站肯定进不了房</b>——先把行李寄存前台再出门吃饭，别拖着箱子找餐厅。</p>
     </div></li>
+    <li class="transit"><span class="t">9 分</span><div class="transit-row">打车 · 3.0 km</div></li>
     <li><span class="t">14:30</span><div class="slot">
       <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=State+Museum+of+Applied+Arts+of+Uzbekistan+Tashkent">应用美术馆</a> <span class="lat">Museum of Applied Arts</span><span class="tag">拍照</span><span class="tag mono" style="letter-spacing:.04em">9:00–18:00 全周开放</span></h3>
       <figure class="photo"><img src="images/applied-arts.jpg" alt="应用美术馆庭院与外立面" loading="lazy" width="1100" height="825"><figcaption>照片 · <a href="https://commons.wikimedia.org/wiki/File:Tashkent_museum_of_applied_arts.jpg">Wikimedia Commons</a></figcaption></figure>
@@ -585,6 +601,7 @@ details.geo>summary:focus-visible{outline:2px solid var(--lapis);outline-offset:
       <p>不大，一个半小时看完。室内、干净、不晒，是这趟少有的"坐下来慢慢看"的地方。对做设计的人来说，这里的纹样比展签有用得多——刺绣的配色和石膏的几何分割都值得拍下来存着。</p>
       <p class="zone" style="color:var(--turq)"><b>全周无休、开到 18:00</b>，所以这站没有闭馆风险，也是全程最灵活的一格：火车晚点、上午拖沓、天气不好，都可以往后挪甚至换到别的半天。</p>
     </div></li>
+    <li class="transit"><span class="t">8 分</span><div class="transit-row">打车 · 1.9 km</div></li>
     <li><span class="t">16:15</span><div class="slot">
       <h3>购物下午<span class="tag">购物</span><span class="h-extra">· <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Human+House+Tashkent">Human House</a> · <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Tashkent+City+Mall">Tashkent City Mall</a> · <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Compass+shopping+mall+Tashkent">Compass</a></span></h3>
       <p><b>Human House</b>——政府背景的手工艺精品店，苏扎尼刺绣、陶瓷、丝巾、细密画都有，明码标价不用砍，包装体面，最适合买送人的礼物。<b>接在美术馆后面是有意的</b>：先看博物馆里的老手艺，再看现在的匠人做成什么样，挑东西的眼光完全不一样。</p>
@@ -614,6 +631,7 @@ details.geo>summary:focus-visible{outline:2px solid var(--lapis);outline-offset:
       <h3>退房，行李寄存 <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Holiday+Inn+Tashkent+City+3+Ukchi+street">Holiday Inn</a></h3>
       <p>Holiday Inn <b>12:00 前退房</b>，所以 09:30 就办好，行李放前台，轻装出门玩到下午。</p>
     </div></li>
+    <li class="transit"><span class="t">14 分</span><div class="transit-row">打车 · 5.7 km</div></li>
     <li><span class="t">10:00</span><div class="slot">
       <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Minor+Mosque+Tashkent">米诺清真寺</a> <span class="lat">Minor Mosque</span><span class="tag">拍照</span><span class="tag dress">遮头</span></h3>
       <figure class="photo"><img src="images/minor-mosque.jpg" alt="米诺清真寺白色大理石外观" loading="lazy" width="1100" height="825"><figcaption>照片 · <a href="https://commons.wikimedia.org/wiki/File:Minor_Mosque_Tashkent.jpg">Wikimedia Commons</a></figcaption></figure>
@@ -621,12 +639,14 @@ details.geo>summary:focus-visible{outline:2px solid var(--lapis);outline-offset:
       <p><b>在用的清真寺</b>：进内殿要遮头、脱鞋，男士别穿短裤。门口通常备有可借的头巾，但自己带更省事。只在外面拍照则没要求。</p>
       <p class="zone" style="color:var(--turq)">放在今天，是因为它和下一站抓饭中心同属电视塔那一片北区，几分钟车程。</p>
     </div></li>
+    <li class="transit"><span class="t">9 分</span><div class="transit-row">打车 · 3.4 km</div></li>
     <li><span class="t">11:45</span><div class="slot">
       <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Besh+Qozon+Iftihor+kochasi+1+Tashkent">中央抓饭中心</a> <span class="lat">Besh Qozon</span><span class="tag">必吃</span></h3>
       <figure class="photo"><img src="images/besh-qozon.jpg" alt="中央抓饭中心两层大厅，座无虚席" loading="lazy" width="1100" height="825"><figcaption>照片 · <a href="https://commons.wikimedia.org/wiki/File:Central_Asian_Plov_Centre.jpg">Wikimedia Commons</a></figcaption></figure>
       <p>在电视塔脚下，从米诺清真寺过来很近。一口直径两米的大锅现做手抓饭，是塔什干的招牌场面，也很出片。<b>必须中午去——通常 13:00 前后就卖光了。</b></p>
       <p>人多、环境是大排档式的，你们如果介意就打包一份，找旁边干净的地方吃。</p>
     </div></li>
+    <li class="transit"><span class="t">22 分</span><div class="transit-row">打车 · 7.1 km</div></li>
     <li><span class="t">13:30</span><div class="slot">
       <h3><a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Chorsu+Bazaar+Tashkent">楚苏巴扎</a>收尾采购<span class="tag">购物</span><span class="h-extra">· <a class="node" href="https://www.google.com/maps/search/?api=1&amp;query=Gold+Center+Chorsu+Tashkent">Gold Center</a></span></h3>
       <p>从北区往西下来，顺路。回第一天看好的干果摊，把杏干、开心果、藏红花一次买齐——最后一天买，不用背着走。用现金，小额苏姆备好。</p>
