@@ -290,6 +290,25 @@ h2{
 .maps .cn{color:var(--ink-soft);font-size:13.5px}
 .maps .warn{color:var(--saffron);font-size:12.5px;font-weight:500;width:100%;margin-top:2px}
 
+.rec-list{padding:8px 20px 18px;display:flex;flex-direction:column;gap:16px}
+.rec{display:flex;gap:12px}
+.rec-photos{display:flex;gap:4px;flex:0 0 auto}
+.rec-photos img{
+  width:74px;height:74px;object-fit:cover;border-radius:3px;
+  border:1px solid var(--rule);background:var(--surface-2);
+}
+.rec-body{display:flex;flex-direction:column;gap:3px;padding-top:1px;min-width:0}
+.rec-name{
+  color:var(--lapis);font-weight:600;font-size:14.5px;text-decoration:none;
+  text-decoration:underline;text-decoration-style:dotted;text-underline-offset:2px;
+}
+.rec-name:hover,.rec-name:focus-visible{text-decoration-style:solid}
+.rec-meta{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;
+  color:var(--ink-mute);letter-spacing:.02em;
+}
+.rec-note{font-size:13px;color:var(--ink-soft);line-height:1.55}
+
 .slot details.more{margin:10px 0 0;border:1px solid var(--rule);border-radius:2px;background:var(--surface-2)}
 .slot details.more>summary{
   cursor:pointer;list-style:none;padding:8px 12px;
@@ -795,6 +814,60 @@ details.geo>summary:focus-visible{outline:2px solid var(--lapis);outline-offset:
     <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Afsona+restaurant+Tashkent">Afsona</a><span class="cn">改良乌兹别克菜</span></li>
     <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Bibliotheka+bar+and+grill+Tashkent">Bibliotheka Bar &amp; Grill</a><span class="cn">图书馆主题 · 安静</span></li>
   </ol>
+</div>
+
+<div class="maps">
+  <div class="maps-h"><h3>群友推荐</h3><span class="day-n">已存入 Uz</span></div>
+  <div class="rec-list">
+
+    <div class="rec">
+      <div class="rec-photos">
+        <img src="images/rec-bazar-1.jpg" alt="Bazar restaurant 内景" loading="lazy" width="150" height="150">
+        <img src="images/rec-bazar-2.jpg" alt="Bazar restaurant 现烤馕饼台" loading="lazy" width="150" height="150">
+      </div>
+      <div class="rec-body">
+        <a class="rec-name" href="https://www.google.com/maps/search/?api=1&amp;query=Bazar+restaurant+Tashkent+Ukchi">Bazar restaurant</a>
+        <span class="rec-meta">4.5 · Ukchi ko'chasi 3 · 到 02:00</span>
+        <span class="rec-note">老城风的大空间，铜器吊灯配绿花砖，现烤馕饼台在店里当场出炉。<b>就在 Ukchi 街上，离 Holiday Inn 几分钟路</b>，10.05／10.06 顺路可以去。</span>
+      </div>
+    </div>
+
+    <div class="rec">
+      <div class="rec-photos">
+        <img src="images/rec-lali-1.jpg" alt="Lali Restaurant 内景" loading="lazy" width="150" height="150">
+        <img src="images/rec-lali-2.jpg" alt="Lali Restaurant 甜品柜" loading="lazy" width="150" height="150">
+      </div>
+      <div class="rec-body">
+        <a class="rec-name" href="https://www.google.com/maps/search/?api=1&amp;query=Lali+Restaurant+Tashkent">Lali Restaurant</a>
+        <span class="rec-meta">4.7 · Yunusobod · 到 00:00</span>
+        <span class="rec-note">访客说这里把乌兹别克斯坦各地区的风味都做齐了，甜品柜也很有看头。在 Yunusobod 区，离市中心稍远，得专门打车过去。</span>
+      </div>
+    </div>
+
+    <div class="rec">
+      <div class="rec-photos">
+        <img src="images/rec-syro-1.jpg" alt="Syrovarnya 绿植大厅" loading="lazy" width="150" height="150">
+        <img src="images/rec-syro-2.jpg" alt="Syrovarnya 的披萨" loading="lazy" width="150" height="150">
+      </div>
+      <div class="rec-body">
+        <a class="rec-name" href="https://www.google.com/maps/search/?api=1&amp;query=Syrovarnya+Tashkent">Syrovarnya</a>
+        <span class="rec-meta">4.6 · 意大利菜 · UZS 15–45万 · 到 00:00</span>
+        <span class="rec-note">意大利餐厅，访客推荐自制布拉塔奶酪。玻璃顶绿植大厅，白天光线很好，想换换口味吃西餐时可以选这家。</span>
+      </div>
+    </div>
+
+    <div class="rec">
+      <div class="rec-photos">
+        <img src="images/rec-kamolon-1.jpg" alt="Kamolon Osh 的手抓饭" loading="lazy" width="150" height="150">
+      </div>
+      <div class="rec-body">
+        <a class="rec-name" href="https://www.google.com/maps/search/?api=1&amp;query=Kamolon+Osh+Chorsu+Tashkent">Kamolon Osh</a>
+        <span class="rec-meta">4.7 · 手抓饭 · UZS 5–10万 · 到 23:30</span>
+        <span class="rec-note">访客推荐招牌婚礼抓饭，0.7 份就够一人吃。<b>塔什干有好几家同名分店，这个是 Chorsu 附近那家</b>，跟 10.06 上午的楚苏巴扎顺路，可以替掉或加餐 Besh Qozon。</span>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 <div class="maps">
