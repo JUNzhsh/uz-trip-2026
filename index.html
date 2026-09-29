@@ -309,6 +309,26 @@ h2{
 }
 .rec-note{font-size:13px;color:var(--ink-soft);line-height:1.55}
 
+.rec-photos img{cursor:zoom-in}
+.rec-photos img:focus-visible{outline:2px solid var(--lapis);outline-offset:2px}
+
+.lightbox{
+  position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;
+  padding:24px;background:rgba(10,12,16,.92);opacity:0;pointer-events:none;
+  transition:opacity .15s ease;
+}
+.lightbox.open{opacity:1;pointer-events:auto}
+.lightbox img{
+  max-width:92vw;max-height:88vh;object-fit:contain;border-radius:4px;
+  box-shadow:0 20px 60px rgba(0,0,0,.5);cursor:zoom-out;
+}
+.lightbox-hint{
+  position:absolute;bottom:20px;left:0;right:0;text-align:center;
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;letter-spacing:.08em;
+  color:rgba(255,255,255,.55);pointer-events:none;
+}
+@media (prefers-reduced-motion:reduce){.lightbox{transition:none}}
+
 .slot details.more{margin:10px 0 0;border:1px solid var(--rule);border-radius:2px;background:var(--surface-2)}
 .slot details.more>summary{
   cursor:pointer;list-style:none;padding:8px 12px;
@@ -822,8 +842,8 @@ details.geo>summary:focus-visible{outline:2px solid var(--lapis);outline-offset:
 
     <div class="rec">
       <div class="rec-photos">
-        <img src="images/rec-bazar-1.jpg" alt="Bazar restaurant 内景" loading="lazy" width="150" height="150">
-        <img src="images/rec-bazar-2.jpg" alt="Bazar restaurant 现烤馕饼台" loading="lazy" width="150" height="150">
+        <img src="images/rec-bazar-1.jpg" data-full="images/rec-bazar-1-full.jpg" alt="Bazar restaurant 内景" loading="lazy" width="150" height="150">
+        <img src="images/rec-bazar-2.jpg" data-full="images/rec-bazar-2-full.jpg" alt="Bazar restaurant 现烤馕饼台" loading="lazy" width="150" height="150">
       </div>
       <div class="rec-body">
         <a class="rec-name" href="https://www.google.com/maps/search/?api=1&amp;query=Bazar+restaurant+Tashkent+Ukchi">Bazar restaurant</a>
@@ -834,8 +854,8 @@ details.geo>summary:focus-visible{outline:2px solid var(--lapis);outline-offset:
 
     <div class="rec">
       <div class="rec-photos">
-        <img src="images/rec-lali-1.jpg" alt="Lali Restaurant 内景" loading="lazy" width="150" height="150">
-        <img src="images/rec-lali-2.jpg" alt="Lali Restaurant 甜品柜" loading="lazy" width="150" height="150">
+        <img src="images/rec-lali-1.jpg" data-full="images/rec-lali-1-full.jpg" alt="Lali Restaurant 内景" loading="lazy" width="150" height="150">
+        <img src="images/rec-lali-2.jpg" data-full="images/rec-lali-2-full.jpg" alt="Lali Restaurant 甜品柜" loading="lazy" width="150" height="150">
       </div>
       <div class="rec-body">
         <a class="rec-name" href="https://www.google.com/maps/search/?api=1&amp;query=Lali+Restaurant+Tashkent">Lali Restaurant</a>
@@ -846,8 +866,8 @@ details.geo>summary:focus-visible{outline:2px solid var(--lapis);outline-offset:
 
     <div class="rec">
       <div class="rec-photos">
-        <img src="images/rec-syro-1.jpg" alt="Syrovarnya 绿植大厅" loading="lazy" width="150" height="150">
-        <img src="images/rec-syro-2.jpg" alt="Syrovarnya 的披萨" loading="lazy" width="150" height="150">
+        <img src="images/rec-syro-1.jpg" data-full="images/rec-syro-1-full.jpg" alt="Syrovarnya 绿植大厅" loading="lazy" width="150" height="150">
+        <img src="images/rec-syro-2.jpg" data-full="images/rec-syro-2-full.jpg" alt="Syrovarnya 的披萨" loading="lazy" width="150" height="150">
       </div>
       <div class="rec-body">
         <a class="rec-name" href="https://www.google.com/maps/search/?api=1&amp;query=Syrovarnya+Tashkent">Syrovarnya</a>
@@ -858,7 +878,7 @@ details.geo>summary:focus-visible{outline:2px solid var(--lapis);outline-offset:
 
     <div class="rec">
       <div class="rec-photos">
-        <img src="images/rec-kamolon-1.jpg" alt="Kamolon Osh 的手抓饭" loading="lazy" width="150" height="150">
+        <img src="images/rec-kamolon-1.jpg" data-full="images/rec-kamolon-1-full.jpg" alt="Kamolon Osh 的手抓饭" loading="lazy" width="150" height="150">
       </div>
       <div class="rec-body">
         <a class="rec-name" href="https://www.google.com/maps/search/?api=1&amp;query=Kamolon+Osh+Chorsu+Tashkent">Kamolon Osh</a>
@@ -906,5 +926,46 @@ details.geo>summary:focus-visible{outline:2px solid var(--lapis);outline-offset:
 <p class="foot">行程按已出票的航班和火车时刻倒排。餐厅营业时间、景点开放时间和门票价格可能变动，出门前用地图 app 再确认一次当天状态。所有时间均为当地时间（比北京时间晚 3 小时）。</p>
 
 </div>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+  <img id="lightbox-img" src="" alt="">
+  <p class="lightbox-hint">点任意位置关闭</p>
+</div>
+
+<script>
+(function(){
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lightbox-img');
+  function openLB(src, alt){
+    lbImg.src = src;
+    lbImg.alt = alt || '';
+    lb.classList.add('open');
+    lb.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLB(){
+    lb.classList.remove('open');
+    lb.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    lbImg.src = '';
+  }
+  document.querySelectorAll('.rec-photos img[data-full]').forEach(function(img){
+    img.tabIndex = 0;
+    img.setAttribute('role', 'button');
+    img.setAttribute('aria-label', '查看大图：' + (img.alt || ''));
+    img.addEventListener('click', function(){ openLB(img.dataset.full, img.alt); });
+    img.addEventListener('keydown', function(e){
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openLB(img.dataset.full, img.alt);
+      }
+    });
+  });
+  lb.addEventListener('click', closeLB);
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') closeLB();
+  });
+})();
+</script>
 
 </body></html>
